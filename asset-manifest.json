@@ -1,14 +1,16 @@
 {
-  "catalog.js": "static/catalog.b01ba414.js",
-  "catalog.js.map": "static/catalog.b01ba414.js.map",
-  "manifest.js": "static/manifest.74e3dea2.js",
-  "manifest.js.map": "static/manifest.74e3dea2.js.map",
-  "static/0.a5ee3767.chunk.js": "static/0.a5ee3767.chunk.js",
-  "static/0.a5ee3767.chunk.js.map": "static/0.a5ee3767.chunk.js.map",
-  "static/1.186e7808.chunk.js": "static/1.186e7808.chunk.js",
-  "static/1.186e7808.chunk.js.map": "static/1.186e7808.chunk.js.map",
-  "static/2.6f1c1103.chunk.js": "static/2.6f1c1103.chunk.js",
-  "static/2.6f1c1103.chunk.js.map": "static/2.6f1c1103.chunk.js.map",
-  "vendor.js": "static/vendor.089c06de.js",
-  "vendor.js.map": "static/vendor.089c06de.js.map"
+  "catalog.js": "static/catalog.34861951.js",
+  "catalog.js.map": "static/catalog.34861951.js.map",
+  "manifest.js": "static/manifest.a2e5f5bd.js",
+  "manifest.js.map": "static/manifest.a2e5f5bd.js.map",
+  "static/0.f589e288.chunk.js": "static/0.f589e288.chunk.js",
+  "static/0.f589e288.chunk.js.map": "static/0.f589e288.chunk.js.map",
+  "static/1.efa4de37.chunk.js": "static/1.efa4de37.chunk.js",
+  "static/1.efa4de37.chunk.js.map": "static/1.efa4de37.chunk.js.map",
+  "static/2.67e9fb13.chunk.js": "static/2.67e9fb13.chunk.js",
+  "static/2.67e9fb13.chunk.js.map": "static/2.67e9fb13.chunk.js.map",
+  "static/3.e0845b32.chunk.js": "static/3.e0845b32.chunk.js",
+  "static/3.e0845b32.chunk.js.map": "static/3.e0845b32.chunk.js.map",
+  "vendor.js": "static/vendor.8d211fd0.js",
+  "vendor.js.map": "static/vendor.8d211fd0.js.map"
 }
