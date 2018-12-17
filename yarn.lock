@@ -1748,13 +1748,23 @@ babel-plugin-macros@^2.0.0:
   dependencies:
     cosmiconfig "^5.0.5"
 
-"babel-plugin-styled-components@>= 1", babel-plugin-styled-components@^1.8.0:
+"babel-plugin-styled-components@>= 1":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.9.0.tgz#7b814bbe55900d9e0f6ec2c66741a1992c1c4a3d"
   integrity sha512-DRurNjnndoIAiW0+vYgQyGmnCtKyCEGP9Y19Z9NrSwMEMGBWl2S7Q7F70RyGDae+KKeighhOPI1WttIb3r0xaA==
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.0.0"
     "@babel/plugin-syntax-jsx" "^7.0.0"
+    lodash "^4.17.10"
+
+babel-plugin-styled-components@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.10.0.tgz#ff1f42ad2cc78c21f26b62266b8f564dbc862939"
+  integrity sha512-sQVKG8irFXx14ZfaK1bBePirfkacl3j8nZwSZK+ZjsbnadRHKQTbhXbe/RB1vT6Vgkz45E+V95LBq4KqdhZUNw==
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.0.0"
+    "@babel/helper-module-imports" "^7.0.0"
+    babel-plugin-syntax-jsx "^6.18.0"
     lodash "^4.17.10"
 
 babel-plugin-syntax-async-functions@^6.8.0:
