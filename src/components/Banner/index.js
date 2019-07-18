@@ -64,20 +64,41 @@ class Banner extends Component {
   componentDidMount() {
     // update max height to the correct value so animation works correctly
     if (this.props.content && this.state.isExpanded) {
-      const maxHeight = this.content.current.offsetHeight + BASE_BANNER_HEIGHT;
+      const maxHeight =
+        this.text.current.offsetHeight +
+        this.heading.current.offsetHeight +
+        this.content.current.offsetHeight +
+        32;
 
       // eslint-disable-next-line react/no-did-mount-set-state
       this.setState({ maxHeight: `${maxHeight}px` });
+    }
+    if (!this.props.content && !this.props.isExpanded) {
+      // eslint-disable-next-line react/no-did-mount-set-state
+      this.setState({
+        maxHeight: `${this.text.current.offsetHeight +
+          this.heading.current.offsetHeight +
+          32}px`
+      });
     }
   }
 
   content = React.createRef();
 
+  heading = React.createRef();
+
+  text = React.createRef();
+
   toggleContent = () => {
     const { onButtonClick } = this.props;
     const contentHeight = this.content.current.offsetHeight;
-    const collapsedMaxHeight = `${BASE_BANNER_HEIGHT}px`;
-    const expandedMaxHeight = `${contentHeight + BASE_BANNER_HEIGHT}px`;
+    const headingHeight = this.heading.current.offsetHeight;
+    const textHeight = this.text.current.offsetHeight;
+    const collapsedMaxHeight = `${textHeight + headingHeight + 32}px`;
+    const expandedMaxHeight = `${contentHeight +
+      headingHeight +
+      textHeight +
+      32}px`;
 
     this.setState(({ isExpanded }) => ({
       isExpanded: !isExpanded,
@@ -99,7 +120,6 @@ class Banner extends Component {
       buttonProps
     } = this.props;
     const { isExpanded } = this.state;
-
     if (!linkText && !expandedText && !collapsedText) {
       return null;
     }
@@ -109,10 +129,9 @@ class Banner extends Component {
       : { ...buttonProps, onClick: this.toggleContent };
 
     const text = linkText || (isExpanded ? expandedText : collapsedText);
-
     return (
       <Link size="hecto" {...props}>
-        {text}
+        <div ref={this.text}>{text}</div>
       </Link>
     );
   };
@@ -165,7 +184,7 @@ class Banner extends Component {
             <IconSection>{this.renderIcon()}</IconSection>
             <ContentSection>
               <Text tag="span" weight="semiBold">
-                {heading}
+                <div ref={this.heading}>{heading}</div>
               </Text>
               {this.renderControl()}
               <div ref={this.content}>
